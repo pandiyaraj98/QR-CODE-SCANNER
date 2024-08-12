@@ -1,0 +1,98 @@
+
+.box{
+  background: #ffffff;
+  /* backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  margin: auto;
+  width:fit-content;
+}
+h1{
+  background: linear-gradient(to left, #b4b4b4 20%, #dfdede 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+}
+
+.label-float input{
+  border: 1px solid #b8b8b8;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 16px;
+  transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  -webkit-appearance:none;
+}
+
+.label-float input:focus{
+  border: 2px solid #16aef5;
+}
+label{
+  color: #a8a8a8;
+}
+
+.label-float input::placeholder{
+  color:transparent;
+}
+
+.label-float label{
+  pointer-events: none;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 15px;
+  transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  background-color: white;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.label-float input:required:invalid + label{
+  color: #a8a8a8;
+}
+.label-float input:focus:required:invalid{
+  border: 2px solid red;
+}
+.label-float input:required:invalid + label:before{
+  content: '*';
+}
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label{
+  font-size: 13px;
+  top: 0;
+  color: #16aef5;
+}
+
+.btn1{
+  background-color: #16aef5;
+  color: white;
+}
+.btn2{
+  background-color: rgb(71, 71, 71);
+  color: white;
+}
+
+.btn1, .btn2{
+  font-size: 14px;
+}
+ .btn2:hover{
+  border: 1px solid #a8a8a8;
+}
+.btn1:hover{
+  color: black;
+  border: 1px solid #a8a8a8;
+}
+footer p{
+  font-size: 12px;
+  letter-spacing: 1px;
+}
